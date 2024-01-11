@@ -1,0 +1,49 @@
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>JavaScript Puro</title>
+    </header>
+
+    <body>
+
+        <script>
+            
+            function testes(){
+                //executado quando chamar a função.
+                console.log('chamando a função testes');
+            }
+
+            testes();
+
+            function testes2(nome,idade){
+            console.log("O nome passado é: "+nome);
+            console.log("A idade é: "+idade);
+            console.log("==============");
+            }
+
+           //testes2("Liliane",26);
+           //testes2("João",30);
+
+            /*function pegarNome(){
+                return "Liliane";
+                console.log("testes");
+            }
+
+            var nome = pegarNome();
+            console.log(nome);*/
+
+            function pegarNome(parametro){
+                if(parametro == 1){
+                return "Liliane";
+            }else{
+                return "Outro nome";
+            } 
+        }
+
+        var nome = pegarNome(123456);
+        console.log(nome);
+
+        </script>
+
+    </body>
+</html>
